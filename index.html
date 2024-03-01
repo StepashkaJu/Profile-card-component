@@ -1,35 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Profile card component</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="bg-circle-top">
+          <img src="images/bg-pattern-top.svg" alt="bg circle" />
+        </div>
+        <div class="bg-circle-bottom">
+          <img src="images/bg-pattern-bottom.svg" alt="bg circle" />
+        </div>
+        <div class="profile-card">
+          <img
+            src="images/bg-pattern-card.svg"
+            alt="profile background"
+            class="profile-background"
+          />
+          <div class="profile-container">
+            <div class="photo-circle">
+              <img
+                src="images/image-victor.jpg"
+                alt="profile photo"
+                class="profile-photo"
+              />
+            </div>
+            <div class="profile-data">
+              <div class="pforile-name">Victor Crest</div>
+              <div class="profile-age">26</div>
+            </div>
+            <div class="profile-city">London</div>
+          </div>
+          <hr class="divider" />
+          <div class="profile-statistic">
+            <div class="profile-folowers">
+              <div class="number">80K</div>
+              <div class="mention">Followers</div>
+            </div>
+            <div class="profile-likes">
+              <div class="number">803K</div>
+              <div class="mention">Likes</div>
+            </div>
+            <div class="profile-photos">
+              <div class="number">1.4K</div>
+              <div class="mention">Photos</div>
+            </div>
+          </div>
+        </div>
+        <footer class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.frontendmentor.io/profile/StepashkaJu"
+            >StepashkaJu</a
+          >.
+        </footer>
+      </div>
+    </main>
+  </body>
 </html>
