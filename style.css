@@ -136,4 +136,16 @@ body {
     right: -10%;
 }
 
-@media (max-width:375px) {}
+@media (max-width:768px) {
+    .bg-circle-top {
+        position: absolute;
+        top: -85%;
+        left: -200%;
+    }
+
+    .bg-circle-bottom {
+        position: absolute;
+        top: 50%;
+        right: -200%;
+    }
+}
