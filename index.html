@@ -32,45 +32,61 @@
   <body>
     <main>
       <div class="container">
+        <!-- просто лежит внутри контейнера, самостоятельный блок с картинкой-->
         <div class="bg-circle-top">
           <img src="images/bg-pattern-top.svg" alt="bg circle" />
         </div>
+        <!-- просто лежит внутри контейнера, самостоятельный блок с картинкой-->
         <div class="bg-circle-bottom">
           <img src="images/bg-pattern-bottom.svg" alt="bg circle" />
         </div>
+        <!-- самостоятельный блок, может быть также назван как profileCard, c использованием camelCase -->
         <div class="profile-card">
+          <!-- может использоваться самостоятельно, поэтому имя блока в названии класса не прописываем -->
           <img
             src="images/bg-pattern-card.svg"
             alt="profile background"
             class="profile-background"
           />
-          <div class="profile-container">
-            <div class="photo-circle">
+          <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+          <div class="profile-card__profile-container">
+            <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+            <div class="profile-card__photo-circle">
+              <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
               <img
+                class="profile-card__photo"
                 src="images/image-victor.jpg"
                 alt="profile photo"
-                class="profile-photo"
               />
             </div>
-            <div class="profile-data">
-              <div class="pforile-name">Victor Crest</div>
-              <div class="profile-age">26</div>
+            <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+            <div class="profile-card__data">
+              <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+              <div class="profile-card__name">Victor Crest</div>
+              <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+              <div class="profile-card__age">26</div>
             </div>
-            <div class="profile-city">London</div>
+            <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+            <div class="profile-card__city">London</div>
           </div>
+          <!-- самостоятельный блок -->
           <hr class="divider" />
-          <div class="profile-statistic">
-            <div class="profile-folowers">
-              <div class="number">80K</div>
-              <div class="mention">Followers</div>
+          <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+          <div class="profile-card__statistic">
+            <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+            <div class="profile-card__statistic-data">
+              <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+              <div class="profile-card__number">80K</div>
+              <!-- может использоваться только внутри блока, поэтому прописываем имя-блока__имя-элемента  -->
+              <div class="profile-card__mention">Followers</div>
             </div>
-            <div class="profile-likes">
-              <div class="number">803K</div>
-              <div class="mention">Likes</div>
+            <div class="profile-card__statistic-data">
+              <div class="profile-card__number">803K</div>
+              <div class="profile-card__mention">Likes</div>
             </div>
-            <div class="profile-photos">
-              <div class="number">1.4K</div>
-              <div class="mention">Photos</div>
+            <div class="profile-card__statistic-data">
+              <div class="profile-card__number">1.4K</div>
+              <div class="profile-card__mention">Photos</div>
             </div>
           </div>
         </div>
